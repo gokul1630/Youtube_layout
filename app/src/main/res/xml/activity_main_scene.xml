@@ -53,7 +53,7 @@
             motion:layout_constraintStart_toStartOf="@+id/constraintLayout" />
         <Constraint
             android:id="@+id/videoTitle"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="@id/constraintLayout"
             android:alpha="1"
@@ -83,13 +83,14 @@
         <Constraint
             android:id="@+id/tvTitle"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             motion:layout_constraintTop_toBottomOf="@+id/constraintLayout"
             android:layout_marginStart="10dp"
             motion:layout_constraintHorizontal_bias="0.0"
             motion:layout_constraintStart_toStartOf="parent"
-            android:alpha="0" />
+            android:alpha="0"
+            android:layout_marginEnd="10dp" />
         <Constraint
             android:id="@+id/scrollView"
             motion:layout_constraintEnd_toEndOf="parent"
